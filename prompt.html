@@ -24,6 +24,11 @@
       padding: 0 0 60px;
     }
 
+    .page-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
     /* ヘッダー */
     .page-header {
       background: var(--gradient);
@@ -219,9 +224,13 @@
 <body>
 
   <div class="page-header">
-    <p class="label">lilis+ ウェビナー ✏️ ミニワーク</p>
-    <h1>LPファーストビュー<br>生成プロンプト</h1>
+    <div class="page-inner">
+      <p class="label">lilis+ ウェビナー ✏️ ミニワーク</p>
+      <h1>LPファーストビュー<br>生成プロンプト</h1>
+    </div>
   </div>
+
+  <div class="page-inner">
 
   <div class="steps">
     <div class="step">
@@ -380,6 +389,8 @@ CTAボタン：「[CTAボタン文言]」
 - 丸い吹き出しや装飾を詰め込みすぎない
 - 自然な日本語・日本の漢字を使用する</pre>
   </div>
+
+  </div><!-- /.page-inner -->
 
   <script>
     const btn = document.getElementById('js-copy-btn');
